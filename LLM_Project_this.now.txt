@@ -1,0 +1,16 @@
+domain specific AI translator that does English -> SQL
+real-time, does not store data
+context = our patent DB schema (based on the columns and their data types given)
+fine tuned using PEFT QLoRA and unsloth
+trained on 500 steps on a small data subset
+so far, its trained only on the structure. No confidential patent data included
+any data can be asked as long as its relevant to teh fields
+would need more training to handle more complexity
+
+
+parallelize the training
+data preparation??? do better
+
+nohup 
+create a shell script with the python commands to run the qlora-script and the eval-script, run that.
+Redirect the output that you get from running that shell script to a file where it is stored, that can be accessed later.
